@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../Navbar.css';
-// import * as React from "react";
-// import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faHeart, faSignOutAlt, faBars, faBarsProgress, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import ReactH5AudioPlayer from 'react-h5-audio-player';
@@ -10,8 +8,7 @@ import 'react-h5-audio-player/lib/styles.css';
 
 
 
-
-const Home = ({ isLogin, setIsLogin }) => {
+const Home = () => {
   const [trending, setTrending] = React.useState([]);
   const [top20, setTop20] = React.useState([]);
   const [top50, setTop50] = React.useState([]);
@@ -22,9 +19,7 @@ const Home = ({ isLogin, setIsLogin }) => {
   const [sad, setSad] = React.useState([]);
 
   const navigate = useNavigate();
-  const handleSignIn = () => {
-    navigate("/signin");
-  };
+
 
   const fetchTrendingSong = async () => {
     try {
@@ -33,7 +28,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -51,7 +46,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -69,7 +64,7 @@ const Home = ({ isLogin, setIsLogin }) => {
       {
         headers: {
           accept: "application/json",
-          projectID: "f104bi07c490",
+          projectID: "treoo5dhf86s",
         },
       }
     );
@@ -85,7 +80,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -104,7 +99,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -123,7 +118,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -142,7 +137,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -161,7 +156,7 @@ const Home = ({ isLogin, setIsLogin }) => {
         {
           headers: {
             accept: "application/json",
-            projectID: "f104bi07c490",
+            projectID: "treoo5dhf86s",
           },
         }
       );
@@ -385,8 +380,6 @@ const Home = ({ isLogin, setIsLogin }) => {
         </div>
         {/* ///////////////////////--------------------------------------------------------------------- */}
 
-        {/* ///////////////////////--------------------------------------------------------------------- */}
-
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-80px]">
             <h1 className="text-base text-[25px] font-bold text-neutral-300 px-3 py-2">
@@ -527,27 +520,12 @@ const Home = ({ isLogin, setIsLogin }) => {
           </div>
         </div>
       </main>
+      {/* Audio player */}
       <div className="container">
-        <h1>Hello, audio player!</h1>
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
           volume={0.5}
-        // Try other props!
         />
-        <p>
-          <a
-            href="https://github.com/lhz516/react-h5-audio-player"
-            target="_blank"
-          >
-            Read Docs on Github
-          </a>
-        </p>
-        <p>
-          <span>Author: </span>
-          <a href="https://hanzluo.com" target="_blank">
-            Hanz Luo
-          </a>
-        </p>
       </div>
     </div>
 
