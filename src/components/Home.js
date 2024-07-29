@@ -308,7 +308,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* Top 50 of this month--------------------------------------------------------------------- */}
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-20px]">
             <h1 className="text-base text-[25px] font-bold text-neutral-300 px-3 py-2">
@@ -343,7 +343,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* Evergreen melodies--------------------------------------------------------------------- */}
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-20px]">
             <h1 className="text-base text-[25px] font-bold text-neutral-300 px-3 py-2">
@@ -378,7 +378,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* Happy--------------------------------------------------------------------- */}
 
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-80px]">
@@ -414,7 +414,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* RomanticRomantic--------------------------------------------------------------------- */}
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-25px]">
             <h1 className="text-base text-[25px] font-bold text-neutral-300 px-3 py-2">
@@ -449,7 +449,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* Excited--------------------------------------------------------------------- */}
 
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-5px] mt-[-20px]">
@@ -485,7 +485,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* ///////////////////////--------------------------------------------------------------------- */}
+        {/* Sad--------------------------------------------------------------------- */}
         <div className="bg-black text-white pt-[70px]">
           <div className="trending mb-[-25px] mt-[-30px]">
             <h1 className="text-base text-[25px] font-bold text-neutral-300 px-3 py-2">
